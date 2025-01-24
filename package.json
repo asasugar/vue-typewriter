@@ -1,5 +1,5 @@
 {
-  "name": "vue3-typewriter",
+  "name": "@asasugar-use/vue3-typewriter",
   "description": "Vue3 Component for typewriter effects.",
   "author": "Jay Hsueh <xxj95719@gmail.com>",
   "private": false,
@@ -37,6 +37,14 @@
     "vite-plugin-dts": "^4.5.0",
     "vue-tsc": "^2.2.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asasugar/vue-typewriter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asasugar/vue-typewriter/issues"
+  },
+  "homepage": "https://github.com/asasugar/vue-typewriter#readme",
   "keywords": [
     "vue",
     "vue3",
