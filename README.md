@@ -30,7 +30,7 @@ import VueTypewriter from  "vue3-typewriter";
 - Template
 
 ```vue
- <VueTypewriter text="您准备用打字机效果的文字" />
+ <VueTypewriter text="打字机当前文本。" />
 ```
 
 ## Props

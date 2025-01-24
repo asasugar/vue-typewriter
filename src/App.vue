@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import VueTypewriter from './components/vue-typewriter.vue';
-const dynamicText = ref('打字机初始很长很长很长数据更新完了。');
+const dynamicText = ref('打字机当前文本。');
 
 // 模拟动态数据更新
 onMounted(() => {
