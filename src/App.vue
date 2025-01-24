@@ -1,17 +1,25 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, onMounted } from 'vue';
+
+const dynamicText = ref('打字机初始很长很长很长数据更新完了。');
+
+// 模拟动态数据更新
+onMounted(() => {
+  // 使用 setInterval 来定期更新响应式变量
+  setInterval(() => {
+    dynamicText.value += `突然，增加了新的数据`;
+  }, 1000); // 每秒更新一次
+});
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <TypeWriter :text="dynamicText"  cursor-color="blue" />
+
 </template>
 
 <style scoped>
