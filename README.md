@@ -37,7 +37,7 @@ import VueTypewriter from  "@asasugar-use/vue3-typewriter";
 
 | Name | Type | Description | Required | Default |
 | ------ | ------ | ------ | ------ | ------ |
-| text | String | Text with typewriter effect | Yes | 打字机文本。 |
+| text | String | Text with typewriter effect | Yes | '' |
 | typingSpeed | Number | Typing speed, the larger the value, the slower the speed | No | 100 |
 | cursorShow | Boolean | Is the cursor at the end of the text flashing | No | true |
 | cursorColor | String | Cursor color value | No | red |
