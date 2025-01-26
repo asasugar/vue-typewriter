@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import VueTypewriter from './components/vue-typewriter.vue';
+import Vue3Typewriter from './components/vue3-typewriter.vue';
 const dynamicText = ref('打字机当前文本。');
 
 // 模拟动态数据更新
@@ -18,7 +18,7 @@ onMounted(() => {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <VueTypewriter :text="dynamicText"  cursor-color="blue" />
+  <Vue3Typewriter :text="dynamicText"  cursor-color="blue" />
 
 </template>
 

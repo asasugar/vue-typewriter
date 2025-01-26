@@ -2,23 +2,23 @@
   "name": "@asasugar-use/vue3-typewriter",
   "description": "Vue3 Component for typewriter effects.",
   "author": "Jay Hsueh <xxj95719@gmail.com>",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "dist/vue-typewriter.umd.js",
-  "module": "dist/vue-typewriter.es.js",
+  "main": "dist/vue3-typewriter.umd.js",
+  "module": "dist/vue3-typewriter.es.js",
   "types": "dist/types/install.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types/install.d.ts",
-      "import": "./dist/vue-typewriter.es.js",
-      "require": "./dist/vue-typewriter.umd.js"
+      "import": "./dist/vue3-typewriter.es.js",
+      "require": "./dist/vue3-typewriter.umd.js"
     },
     "./style": {
-      "import": "./dist/vue-typewriter.css",
-      "require": "./dist/vue-typewriter.css"
+      "import": "./dist/vue3-typewriter.css",
+      "require": "./dist/vue3-typewriter.css"
     }
   },
   "scripts": {
@@ -37,6 +37,7 @@
     "@types/node": "^22.10.10",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "lightningcss": "^1.29.1",
     "terser": "^5.37.0",
     "typescript": "~5.7.3",
     "vite": "^6.0.11",
@@ -45,16 +46,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asasugar/vue-typewriter.git"
+    "url": "git+https://github.com/asasugar/vue3-typewriter.git"
   },
   "bugs": {
-    "url": "https://github.com/asasugar/vue-typewriter/issues"
+    "url": "https://github.com/asasugar/vue3-typewriter/issues"
   },
-  "homepage": "https://github.com/asasugar/vue-typewriter#readme",
+  "homepage": "https://github.com/asasugar/vue3-typewriter#readme",
   "keywords": [
     "vue",
     "vue3",
-    "vue-typewriter",
+    "vue3-typewriter",
     "vue3-typewriter",
     "TypeScript"
   ],

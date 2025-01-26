@@ -7,7 +7,7 @@ Vue3 Component for typewriter effects.
 
 ## Effects
 
-![VueTypewriter Effects](./src/assets/preview.gif)
+![Vue3Typewriter Effects](./src/assets/preview.gif)
 
 ## Installation
 
@@ -24,7 +24,7 @@ pnpm add @asasugar-use/vue3-typewriter
 - Import component
 
 ```js
-import VueTypewriter from  "@asasugar-use/vue3-typewriter"; // Import component
+import Vue3Typewriter from  "@asasugar-use/vue3-typewriter"; // Import component
 import '@asasugar-use/vue3-typewriter/style'; // Import style
 
 ```
@@ -32,7 +32,7 @@ import '@asasugar-use/vue3-typewriter/style'; // Import style
 - Template
 
 ```vue
- <VueTypewriter text="打字机当前文本。" />
+ <Vue3Typewriter text="打字机当前文本。" />
 ```
 
 ## Props

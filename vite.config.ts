@@ -3,6 +3,8 @@ import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts';
 
+const LIBRAY_FILENAME = 'vue3-typewriter';
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -10,15 +12,17 @@ export default defineConfig({
     dts({
       outDir: 'dist/types',
       insertTypesEntry: true,
-      include: ['src/install.ts', 'src/components/vue-typewriter.vue']
+      include: ['src/install.ts', `src/components/${LIBRAY_FILENAME}.vue`]
     })
   ],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/install.ts'),
-      name: 'VueTypewriter',
-      fileName: (format) => `vue-typewriter.${format}.js`
+      name: 'Vue3Typewriter',
+      fileName: (format) => `${LIBRAY_FILENAME}.${format}.js`,
+      cssFileName: `${LIBRAY_FILENAME}`
     },
+    cssMinify: 'lightningcss',
     minify: 'terser',
     terserOptions: {
       compress: {

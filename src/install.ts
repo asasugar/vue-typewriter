@@ -1,5 +1,5 @@
 import type { App } from 'vue';
-import VueTypewriter from './components/vue-typewriter.vue';
+import Vue3Typewriter from './components/vue3-typewriter.vue';
 
 declare global {
   interface Window {
@@ -11,7 +11,7 @@ let installed = false;
 export function install (app: App) {
   if (installed) return;
   installed = true;
-  app.component('VueTypewriter', VueTypewriter);
+  app.component('Vue3Typewriter', Vue3Typewriter);
 }
 
 const plugin = {
@@ -24,4 +24,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 // 导出插件对象
-export default VueTypewriter;
+export default Vue3Typewriter;
