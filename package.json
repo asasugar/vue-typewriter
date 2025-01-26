@@ -2,7 +2,7 @@
   "name": "@asasugar-use/vue3-typewriter",
   "description": "Vue3 Component for typewriter effects.",
   "author": "Jay Hsueh <xxj95719@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -12,7 +12,7 @@
   "types": "dist/types/install.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/install.d.ts",
+      "types": "./dist/types/install.d.ts",
       "import": "./dist/vue-typewriter.es.js",
       "require": "./dist/vue-typewriter.umd.js"
     }
@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "p": "npm publish --access public"
   },
   "peerDependencies": {
     "vue": "^3.5.13"
@@ -50,5 +51,9 @@
     "vue-typewriter",
     "vue3-typewriter",
     "TypeScript"
-  ]
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=6"
+  }
 }
