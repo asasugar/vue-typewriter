@@ -24,7 +24,9 @@ pnpm add @asasugar-use/vue3-typewriter
 - Import component
 
 ```js
-import VueTypewriter from  "@asasugar-use/vue3-typewriter";
+import VueTypewriter from  "@asasugar-use/vue3-typewriter"; // Import component
+import '@asasugar-use/vue3-typewriter/style'; // Import style
+
 ```
 
 - Template
